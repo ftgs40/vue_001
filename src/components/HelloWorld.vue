@@ -13,7 +13,7 @@
     <hr />
     <h2>v-for (Loop)</h2>
     <ul>
-      <li v-for="todo in todos">
+      <li v-for="(todo, index) in todos" v-bind:key="index">
         {{ todo.text }}
       </li>
     </ul>
