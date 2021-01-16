@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Abount from '../views/About.vue'
 import PageNotFound from '../views/Notfound'
+import User from '../views/User'
 
 Vue.use(VueRouter)
 
@@ -17,6 +18,11 @@ const routes = [
     path: '/about',
     name: 'About',
     component: Abount
+  },
+  {
+    path: '/user/:id',
+    name: 'User',
+    component: User
   },
   {
     path: "*",
